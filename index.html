@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Ben</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="sm-logo" src="assets/asset1.png" alt="logo-small">
+        <div class="nav-links">
+            <a onclick="scrollFunction()">Home</a>
+            <a onclick="scrollFunction2()">About</a>
+            <a onclick="scrollFunction3()">Contact</a>
+        </div>
+    </nav>
+    <div class="hero" id="hero">
+
+        <div class="hero-txt">
+            <h3 id="bb">BIG BEN</h3>
+            <h2 id="ht">The Houses of Parliament's iconic clock tower is one of London's most famous landmarks.</h2>
+        </div>
+    </div>
+    <div id="about" class="sec">
+        <div class="about y-c">
+            <div>
+                <div class="pic-title">
+                    <h5>How tall is Big Ben?</h5>
+                    <img class="bens" src="assets/ben1.jpg" alt="">
+                </div>
+                <p class="information">Elizabeth Tower stands at more than 96 metres (105yrds) tall, with 334 steps to
+                    climb
+                    up to the belfry
+                    and 399 steps to the Ayrton Light at the very top of the tower.</p>
+            </div>
+            <div>
+                <div class="pic-title">
+                    <h5>When was
+                        Big Ben built?</h5>
+                    <img class="bens" src="assets/ben2.jpg" alt="">
+                </div>
+                <p class="information">The Palace of Westminster was destroyed by fire in 1834. In 1844, it was decided
+                    the
+                    new buildings for
+                    the Houses of Parliament should include a tower and a clock.</p>
+            </div>
+        </div>
+        <a class="btn" target="_blank"
+            href="https://www.visitlondon.com/things-to-do/sightseeing/london-attraction/big-ben">Learn More</a>
+    </div>
+    <footer id="contact">
+        <div>
+            <h5>THANK YOU</h5>
+            <h3>to our Sponsors and Partners</h3>
+        </div>
+        <div class="sponsors">
+            <img src="assets/logo1.webp" alt="">
+            <img src="assets/logo2.png" alt="">
+            <img src="assets/logo3.png" alt="">
+        </div>
+        <button class="btn2" onclick="goTo()">Contact Us</button>
+        <div class="bottom">
+            <hr class="line">
+            <p>All rights reserved &#169; 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollFunction() {
+            const element = document.getElementById("hero");
+            element.scrollIntoView();
+        }
+        function scrollFunction2() {
+            const element = document.getElementById("about");
+            element.scrollIntoView();
+        }
+        function scrollFunction3() {
+            const element = document.getElementById("contact");
+            element.scrollIntoView();
+        }
+function goTo(){
+    window.open("https://www.visitlondon.com/contact-us?ref=footer")
+}
+    </script>
+</body>
+
+</html>
